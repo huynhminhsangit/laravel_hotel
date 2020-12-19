@@ -1,0 +1,6 @@
+{
+    "/admin/asset/combine-all-asset.min.css": "/admin/asset/combine-all-asset.min.css",
+    "/admin/css/combine-all-css.min.css": "/admin/css/combine-all-css.min.css",
+    "/admin/asset/combine-all-asset.min.js": "/admin/asset/combine-all-asset.min.js",
+    "/admin/js/combine-all-js.min.js": "/admin/js/combine-all-js.min.js"
+}

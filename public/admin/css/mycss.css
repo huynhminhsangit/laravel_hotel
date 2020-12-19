@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+img.zvn-thumb {
+    max-width: 100%;
+}
+
+img.zvn-thumb.zvn-resize {
+    width: 150px;
+    height: 150px;
+}
+
+.page-header.zvn-page-header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.zvn-page-header-title h3 {
+    margin: 0;
+}
+
+.zvn-page-header-breadcrumb {
+    float: right;
+    line-height: 35px;
+}
+
+.zvn-page-header-title {
+    display: inline-block;
+}
+
+.zvn-breadcrumb-title {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.zvn-breadcrumb-item {
+    float: left;
+}
+
+.zvn-breadcrumb-item>a:hover {
+    color: #0e90d2;
+}
+
+.zvn-breadcrumb-item:first-child:before {
+    content: "";
+}
+
+.zvn-breadcrumb-item:before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #636c72;
+    content: "/";
+}
+
+.zvn-alert>strong {
+    font-size: 20px;
+}
+
+.zvn-alert {
+    color: #ffffff;
+}
+
+.zvn-alert button>span {
+    color: #281f1f !important;
+}
+
+.zvn-box-slt-filter select {
+    width: auto;
+    display: inline-block;
+}
+
+.btn-icon {
+    border-radius: 50%;
+}
+
+.zvn-pagination {
+    margin: auto;
+    float: right;
+}
+
+.main_menu_side {
+    margin-top: 20px;
+}
+
+span.highlight {
+    background: yellow;
+    font-weight: bold;
+}
+
+.radio-inline {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.dz-set-default {
+    position: absolute;
+    top: 30px;
+    right: -4px;
+    z-index: 20;
+    width: 22px;
+    height: 22px;
+    background-color: #39bbb0;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.dz-set-default.active {
+    background-color: #32c787;
+}
+
+.dz-set-default:focus {
+    background-color: #32c787;
+    color: #ffffff;
+}
+
+.dz-set-default:hover {
+    cursor: pointer;
+}
+
+.analytics {
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.analytics span.count {
+    font-weight: bold;
+    color: #73879C;
+    font-size: 30px;
+}
+
+.analytics p {
+    color: #aaa;
+    font-size: 25px;
+}
+
+.analytics span.icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+}
+
+.dz-image-preview input {
+    width: 100%;
+    margin-top: 5px;
+}

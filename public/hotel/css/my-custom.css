@@ -1,0 +1,48 @@
+.rooms .wrap-rooms .wrap-box .box-img {
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+}
+
+.rooms .wrap-rooms .wrap-box .box-img img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.testimonials .testimonials-h .testimonials-content .img-testimonials {
+    display: inline-block;
+    max-width: 115px;
+    max-height: 115px;
+    margin-bottom: 30px;
+    border-radius: 100%;
+}
+
+.rooms .wrap-rooms .wrap-box .rooms-content .sky-h4 a {
+    color: #232323;
+}
+
+.rooms .wrap-rooms .wrap-box:hover .rooms-content .sky-h4 a {
+    color: #8E7037;
+}
+
+.rs-200-200 {
+    max-height: 200px;
+}
+
+.team_item .text span {
+    color: #898989;
+    font-size: 14px;
+    display: block;
+    margin-top: 7px;
+}
+
+.sidebar .widget.widget_recent_entries ul li .img {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+}
