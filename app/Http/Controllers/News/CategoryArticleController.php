@@ -38,7 +38,7 @@ class CategoryArticleController extends Controller
             array_unshift($breadcrumb,$tmpBreadcrumb);
             $breadcrumb[] = ['name' => $items[0]['category_name']];
         } else {
-            $items     = $articleModel->listItems($this->params,['task' => 'news-list-article-random']);
+            $items     = $articleModel->listItems($this->params,['task' => 'news-list-items-latest']);
             $titlePage = 'Tin tức';
             $breadcrumb[] = ['name' => 'Tin tức'];
         }

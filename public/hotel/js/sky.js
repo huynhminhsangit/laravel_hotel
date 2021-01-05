@@ -8,7 +8,7 @@ $(document).ready(function() {
     /*lightbox*/
     $('.lightbox').each(function() {
         $('.lightbox').littleLightBox();
-        
+
     });
     /*menu-dropdow*/
     $('.navbar a.dropdown-toggle').on('click', function(e) {
@@ -383,11 +383,11 @@ $(document).ready(function() {
         loop: true,
         nav: true,
         margin: 0,
-        autoplay: true,
-        autoplayTimeout: 12000,
+        // autoplay: true,
+        // autoplayTimeout: 12000,
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
             600: {
                 items: 1

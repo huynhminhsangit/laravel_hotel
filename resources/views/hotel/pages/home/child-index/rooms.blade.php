@@ -23,7 +23,7 @@
                                 $link      = URL::linkProduct($item['id'], $item['name']);
                             @endphp
                             <div class="item">
-                                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-6 ">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                                     <div class="wrap-box">
                                         <div class="box-img">
                                             <a href="{!! $link !!}"><img src="{!! $thumbName !!}" class="img-responsive" alt="{!! $thumbAlt !!}" title="{!! $name !!}"></a>

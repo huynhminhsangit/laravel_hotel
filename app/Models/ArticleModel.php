@@ -71,15 +71,15 @@ class ArticleModel extends AdminModel
             $result = $query->get()->toArray();
         }
 
-        if ($options['task'] == 'news-list-items-latest') {
+        // if ($options['task'] == 'news-list-items-latest') {
 
-            $query = $this->select('a.id', 'a.name', 'a.created', 'a.category_id', 'c.name as category_name', 'a.thumb')
-                ->leftJoin('category_article as c', 'a.category_id', '=', 'c.id')
-                ->where('a.status', '=', 'active')
-                ->orderBy('id', 'desc')
-                ->take(4);;
-            $result = $query->get()->toArray();
-        }
+        //     $query = $this->select('a.id', 'a.name', 'a.created', 'a.category_id', 'c.name as category_name', 'a.thumb')
+        //         ->leftJoin('category_article as c', 'a.category_id', '=', 'c.id')
+        //         ->where('a.status', '=', 'active')
+        //         ->orderBy('id', 'desc')
+        //         ->take(4);;
+        //     $result = $query->get()->toArray();
+        // }
 
         if ($options['task'] == 'news-list-items-in-category') {
             $query = $this->select('id', 'name', 'content', 'thumb', 'created')
@@ -98,9 +98,9 @@ class ArticleModel extends AdminModel
             $result = $query->get()->toArray();
         }
 
-        if ($options['task'] == 'news-list-article-random') {
+        if ($options['task'] == 'news-list-items-latest') {
             $result = self::select('a.id', 'a.name', 'a.content', 'a.category_id', 'c.name as category_name', 'a.thumb', 'a.created', 'a.created_by','a.tags_id')->leftJoin('category_article as c', 'a.category_id', '=', 'c.id')
-            ->where('a.status', '=', 'active')->inRandomOrder()
+            ->where('a.status', '=', 'active')->orderBy('a.id', 'desc')
             ->paginate($params['pagination']['totalItemsPerPage']);
             if(!empty($result)) {
                 foreach ($result as $key => $value) {
@@ -112,6 +112,7 @@ class ArticleModel extends AdminModel
             $result = self::select('a.id', 'a.name', 'a.content', 'a.category_id', 'c.name as category_name', 'a.thumb', 'a.created', 'a.created_by','a.tags_id')->leftJoin('category_article as c', 'a.category_id', '=', 'c.id')
             ->where('a.status', '=', 'active')
             ->where('category_id',$params['category_id'])
+            ->orderBy('a.id', 'desc')
             ->paginate($params['pagination']['totalItemsPerPage']);;
             if(!empty($result)) {
                 foreach ($result as $key => $value) {
